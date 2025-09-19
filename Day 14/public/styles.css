@@ -1,0 +1,176 @@
+/* ---------- Global Styles ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4 {
+  color: #f0f0f0;
+}
+
+/* ---------- Nav & Links ---------- */
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* ---------- Forms ---------- */
+form {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 450px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark form {
+  background: #1e1e1e;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s, background 0.3s, color 0.3s;
+}
+
+body.dark form input, body.dark form textarea {
+  background: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+form button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #ff6600;
+}
+
+/* ---------- Messages ---------- */
+#msg {
+  color: red;
+  margin-top: 10px;
+}
+
+/* ---------- Posts ---------- */
+#posts div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+body.dark #posts div {
+  background: #1e1e1e;
+}
+
+#posts div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+#posts h4 {
+  margin-bottom: 8px;
+}
+
+#posts p {
+  margin-bottom: 10px;
+}
+
+#posts small {
+  color: #666;
+}
+
+/* ---------- Tags ---------- */
+.tag {
+  display: inline-block;
+  background: #ff6600;
+  color: #fff;
+  padding: 2px 8px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+body.dark .tag {
+  background: #0077cc;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  font-size: 1rem;
+}
+
+/* ---------- Dark Mode Toggle ---------- */
+#darkModeBtn {
+  background: #333;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#darkModeBtn:hover {
+  background: #ff6600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
